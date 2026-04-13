@@ -1,0 +1,26 @@
+[
+  {
+    "question": "Donne moi un événement d'escrime en septembre 2025",
+    "expected": "Escrime",
+    "predicted": "**Nom :** Escrime\n**Date :** 2025-09-21\n**Lieu :** Valenciennes (Nord)\n**Description :** Découvrez l’escrime, les valeurs de ce sport ancestral, des armes et de la pratique, profitez de démonstrations et d’initiations.",
+    "evaluation": "correcte"
+  },
+  {
+    "question": "Donne moi un événement de musique en 2026",
+    "expected": "Conte et musique",
+    "predicted": "**Conte et Musique avec Marine Lefèvre à l'Atelier d'artistes**, 17 janv. 2026, Valenciennes (Nord), Conte et musique à Valenciennes, 17 janv. dès 8€, places limitées.\n\n**Conte et musique avec Géraldine Hilaire à l'atelier d'artistes - 18 janv.**, 18 janv. 2026, Valenciennes (Nord), Conte et musique pour enfants à Valenciennes, 18 janv. 9€, places limitées.",
+    "evaluation": "correcte"
+  },
+  {
+    "question": "Donne moi un événement en avril 2026",
+    "expected": "MALAKOFF",
+    "predicted": "**Réponse :**\n\n- **Nom :** Ago s'invite chez France travail : un CV, des missions en vue !\n- **Date :** 2026-04-14\n- **Lieu :** Valenciennes (Nord)\n- **Description :** L'agence intérimaire Ago Intérim Valenciennes vient à votre rencontre dans votre espace d'accueil France travail pour un premier échange.\n\n- **Nom :** Sensibilisation à la création et reprise d'entreprise\n- **Date :** 2026-04-20\n- **Lieu :** Valenciennes (Nord)\n- **Description :** L'exposé et l'échange porteront sur : 1- Les aides à la création et reprise d'entreprise : ACRE, aide de France Travail, avantages fiscaux...\n\n- **Nom :** L'Armée de Terre Recrute !\n- **Date :** 2026-04-22\n- **Lieu :** Valenciennes (Nord)\n- **Description :** Envie d'un métier qui a du sens ? L'Armée de Terre ouvre ses portes aux jeunes de moins de 26 ans ! Rejoignez nous pour découvrir des opportunités uniques et un avenir plein de défis.\n\n- **Nom :** Les Clés pour Réussir dans la Fonction Publique !\n- **Date :** 2026-04-27\n- **Lieu :** Valenciennes (Nord)\n- **Description :** Plongez au coeur des opportunités de carrière dans la Fonction Publique lors de notre réunion d'information !",
+    "evaluation": "incorrecte"
+  },
+  {
+    "question": "Quel temps fait-il aujourd'hui ?",
+    "expected": "Aucun événement trouvé pour cette période.",
+    "predicted": "Aucun événement trouvé pour cette période.",
+    "evaluation": "correcte"
+  }
+]
