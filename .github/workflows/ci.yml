@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    env:
+      MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Sync dependencies
+        run: uv sync --frozen
+
+      - name: Run deterministic tests
+        run: |
+          uv run python test/test_data_indexing.py
+          uv run python test/test_rag_unit_rules.py
+          uv run python test/test_api_endpoints.py
+          uv run python test/test_performance_metrics.py
+
+      - name: Run RAG evaluation
+        run: uv run python test/evaluate_rag.py
